@@ -213,6 +213,15 @@ footer {
   display: block;
 }
 
+.mce-responses {
+  background: rgba(255,255,255,0.7);
+  color: #000;
+  clear: both;
+  font-size: 14px;
+  padding: 15px;
+  width: 60%;
+}
+
 @media (max-width: 600px) {
   .logo {
     margin: 0 auto;
@@ -246,6 +255,9 @@ footer {
     float: none;
   }
   .input-group input[type="email"] {
+    width: 100%;
+  }
+  .mce-responses {
     width: 100%;
   }
 }
