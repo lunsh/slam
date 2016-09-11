@@ -218,5 +218,34 @@ footer {
     margin: 0 auto;
     display: block;
     float: none;
+    padding: 15px 0;
+  }
+  header nav {
+    float: none;
+    text-align: center;
+  }
+  .navigation {
+    padding: 0;
+    margin: 0;
+  }
+  .about-info h1 {
+    font-size: 5rem; 
+  }
+  .about-info {
+    font-size: 2rem;
+  }
+  .about-info p {
+    width: 100%;
+  }
+  .about {
+    padding: 150px 20px;
+  }
+  .artist {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+  }
+  .input-group input[type="email"] {
+    width: 100%;
   }
 }
