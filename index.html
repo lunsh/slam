@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
 
   <!-- Basic Page Needs
@@ -35,13 +35,12 @@
   <div class="header-wrapper">
     <div class="container">
       <header class="u-cf">
-        <img src="logo.png" class="logo" alt="Somerville Local Arts Mall" />
+        <a href="#top"><img src="logo.png" class="logo" alt="Somerville Local Arts Mall" /></a>
         <nav>
           <ul class="navigation">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Apply</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">Directions</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#artists">Artists</a></li>
+            <li><a href="#directions">Directions</a></li>
           </ul>
         </nav>
       </header>
@@ -51,56 +50,94 @@
     <div class="about-info">
       <h1 class="animated">Welcome to the Somerville Local Arts Mall</h1>
       <p class="animated">a pop-up arts market that will take place from mid-November to mid-December in Union Square Somerville, MA.</p>
+      <div class="input-group">
+        <input type="email" value="" placeholder="Get notified by signing up for our newsletter" /><input type="submit" value="Sign me up" />
+      </div>
     </div>
   </div>
-  <section class="about animated fadeOut container" title="about">
+  <section class="about animated fadeOut container" title="about" id="about">
     <h2>About SLAM</h2>
     <div class="row">
-      <div class="one-half column">
+      <div class="one-third column">
         <p>The Somerville Local Art Mall is a pop-up market featuring the work of 23 local artists. Our goal is to create a space in vibrant Union Square to connect our fantastic population of creators with our fabulous population of creative consumers. The market will run for one month from mid-November to Mid-December, just in time for the holidays!</p>
       </div>
 
-      <div class="one-half column">
-        <p>If you are an artist, turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
-        <a href="#" class="button button-primary">Apply Now</a>
+      <div class="two-thirds column">
+        <p>Check back soon for specific dates and the artist application! In the meantime, here are some key bits of relevant info:</p>
+        <ul>
+          <li>SLAM will be open 7 days a week mid-November through mid-December</li>
+          <li>Each artist will be renting their own room ranging in size and price to set up shop</li>
+          <li>All purchases will be made through a centralized point-of-sale using Square. We will share staffing responsibilities, so each artist staffs 4 days for a month of 7-days-a-week shopping exposure!</li>
+          <li>It will be awesome!</li>
+        </ul>
+      </div>
+      
+      <div class="middle">
+        <!--<a href="#" class="button button-primary">Apply Now</a>-->
       </div>
     </div>
 
   </section>
   
-  <div class="artists">
+  <div class="artists" title="artists" id="artists">
     <div class="container">
-      <section class="artists-section" title="section">
+      <section class="artists-section animated fadeOut" title="section">
         <h2>Meet the artists</h2>
         
         <ul class="artists-list">
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
-          <li class="artist"><div class="artist-placeholder"></div></li>
+          <li class="artist">
+              <div class="overlay"><span>Printmaker</span></div>
+              <div class="artist-placeholder placeholder1"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Jeweler</span></div>
+              <div class="artist-placeholder placeholder2"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Painter</span></div>
+              <div class="artist-placeholder placeholder3"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Sculptor</span></div>
+              <div class="artist-placeholder placeholder4"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Zoro!</span></div>
+              <div class="artist-placeholder placeholder5"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Fiber artist</span></div>
+              <div class="artist-placeholder placeholder6"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay"><span>Doctor Who?</span></div>
+              <div class="artist-placeholder placeholder7"></div>
+          </li>
+          <li class="artist">
+              <div class="overlay always-on-overlay "><span>YOU!</span></div>
+              <div class="artist-placeholder placeholder8"></div>
+          </li>
         </ul>
       </section>
     </div>
   </div>
   
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width: 100%;"><div id="gmap_canvas" style="height:500px;width:100%;"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net/wordpress-portfolio/" id="get-map-data">themecircle</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {scrollwheel: false,zoom:16,center:new google.maps.LatLng(42.3796723,-71.09574609999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.3796723, -71.09574609999999)});infowindow = new google.maps.InfoWindow({content:"<b>Somerville Local Arts Mall</b><br/>Union Square<br/> Somerville" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+  <div id="directions">
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:100%;"><div id="gmap_canvas" style="height:500px;width:100%;"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">themecircle.net</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {scrollwheel: false,zoom:16,center:new google.maps.LatLng(42.381071,-71.09804400000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.381071, -71.09804400000002)});infowindow = new google.maps.InfoWindow({content:"<b>Somerville Local Arts Mall</b><br/>337-341 Somerville Ave.<br/> Somerville" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+  </div>
   
   <footer class="footer">
     <section class="footer-info container">
       <div class="row">
         <div class="one-third column">
           <h2>Contact us</h2>
-          <p>123 Sesame Street</p>
+          <p>337-341 Somerville Ave.</p>
           <p>Somerville, MA 02143</p>
-          <p>hi@somervillearts.org</p>
+          <p>team@somervillearts.org</p>
         </div>
         <div class="two-thirds column">
           <h2>Get notified</h2>
-          <p>We'll alert you to updates and our opening date, as well as specials.</p>
+          <p>Sign up for our mailing list and receive updates about artist applications, opening day, events, and specials.</p>
           <div class="input-group">
             <input type="email" value="" placeholder="Your email here" /><input type="submit" value="Sign me up" />
           </div>

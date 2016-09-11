@@ -10,6 +10,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0;
   transition: all 0.3s ease;
 }
+
+::-webkit-input-placeholder {
+   color: #e8e8e8;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #e8e8e8;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #e8e8e8;  
+}
+
+:-ms-input-placeholder {  
+   color: #e8e8e8;  
+}
 .header-wrapper {
   position: fixed;
   width: 100%;
@@ -84,18 +100,28 @@ header nav {
 .about-info p {
   width: 60%;
 }
-.about-info .button {
+.about-info .button, .about-info .input-group {
    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.about-info input[type=email] {
+  font-size: 15px;
 }
 .about {
   padding: 150px 0;
+}
+.about ul {
+  list-style-position: outside;
+  padding-left: 15px;
+}
+.middle {
+  text-align: center;
 }
 .artists, footer {
   background-color: #f2707f;
   background-image: -webkit-linear-gradient(left, #f2707f, #d23a63); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
   background-image:         linear-gradient(to right, #f2707f, #d23a63); /* Chrome 26, Firefox 16+, IE 10+, Opera */
   border-top: 20px solid rgba(255, 255, 255, 0.3);
-  padding: 40px 0;
+  padding: 60px 0;
   color: #fff;
 }
 footer {
@@ -132,9 +158,65 @@ footer {
   height: 300px;
   padding: 5px;
   box-sizing: border-box;
+  position: relative;
 }
 .artist-placeholder {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3) url(../images/avatar1.png);
   height: 100%;
   width: 100%;
+  background-size: cover;
+}
+.placeholder2 {
+  background-image: url(../images/avatar2.png);
+}
+.placeholder3 {
+  background-image: url(../images/avatar3.png);
+}
+.placeholder4 {
+  background-image: url(../images/avatar4.png);
+}
+.placeholder5 {
+  background-image: url(../images/avatar5.png);
+}
+.placeholder6 {
+  background-image: url(../images/avatar7.png);
+}
+.placeholder7 {
+  background-image: url(../images/avatar6.png);
+}
+.placeholder8 {
+  background-image: url(../images/avatar8.png);
+}
+.overlay {
+  display: none;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+.overlay.always-on-overlay {
+  display: block;
+}
+.overlay span {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #000;
+  font-size: 45px;
+}
+.artist:hover .overlay {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
 }
