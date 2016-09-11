@@ -1,0 +1,140 @@
+body {
+  background: url(../slam.png) no-repeat center 120px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.logo {
+  float: left;
+  width: 150px;
+  padding: 30px 0;
+  transition: all 0.3s ease;
+}
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s ease;
+  top: 0;
+}
+.header-fixed {
+  background: rgba(255, 255, 255, 0.95);
+}
+.header-fixed .logo {
+  width: 100px;
+  padding: 15px 0;
+}
+.header-fixed .navigation {
+  padding-top: 15px;
+}
+header {
+  width: 100%;
+}
+header nav {
+  float: right;
+}
+.navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-top: 35px;
+  transition: all 0.3s ease;
+  margin-right: -25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  padding: 7px 25px;
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #c269a5;
+  font-size: 20px;
+}
+.navigation a:hover {
+  color: #333;
+}
+.navigation a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width .3s;
+}
+.navigation a:hover:after {
+    width: 100%;
+}
+.about-info {
+  margin-top: 320px;
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 500px;
+}
+.about-info h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 7rem;
+  line-height: 1;
+  margin: 0;
+}
+.about-info p {
+  width: 60%;
+}
+.about-info .button {
+   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.about {
+  padding: 150px 0;
+}
+.artists, footer {
+  background-color: #f2707f;
+  background-image: -webkit-linear-gradient(left, #f2707f, #d23a63); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to right, #f2707f, #d23a63); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  border-top: 20px solid rgba(255, 255, 255, 0.3);
+  padding: 40px 0;
+  color: #fff;
+}
+footer {
+  background-color: #a24790;
+  background-image: -webkit-linear-gradient(left, #a24790, #832871); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to right, #a24790, #832871); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+}
+.footer-info p {
+  margin: 0;
+}
+.input-group {
+  margin-top: 15px;
+}
+.input-group input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+}
+.input-group input[type="email"] {
+  width: 50%;
+  margin-right: 5px;
+}
+
+/* Artists */
+.artists-list {
+  padding: 0;
+  margin: 0 -5px;
+  list-style: none;
+}
+.artist {
+  float: left;
+  width: 25%;
+  height: 300px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.artist-placeholder {
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  width: 100%;
+}
