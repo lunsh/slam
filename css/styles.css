@@ -84,7 +84,7 @@ header nav {
     width: 100%;
 }
 .about-info {
-  margin-top: 320px;
+  margin-top: 300px;
   font-size: 3.6rem;
   color: #fff;
   font-weight: bold;
@@ -162,6 +162,7 @@ footer {
 }
 .artist-placeholder {
   background: rgba(255, 255, 255, 0.3) url(../images/avatar1.png);
+  background-position: center center;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -201,13 +202,16 @@ footer {
   display: block;
 }
 .overlay span {
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   display: block;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #000;
   font-size: 45px;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 .artist:hover .overlay {
   display: block;
