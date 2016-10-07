@@ -69,6 +69,11 @@ header nav {
   color: #c269a5;
   font-size: 20px;
 }
+.navigation a.button {
+  font-size: 11px;
+  padding: 0 30px;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .navigation a:hover {
   color: #333;
 }
@@ -79,6 +84,9 @@ header nav {
   height: 2px;
   background: #333;
   transition: width .3s;
+}
+.navigation a.button:after {
+  display: none;
 }
 .navigation a:hover:after {
     width: 100%;
