@@ -137,6 +137,10 @@ footer {
   background-image: -webkit-linear-gradient(left, #a24790, #832871); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
   background-image:         linear-gradient(to right, #a24790, #832871); /* Chrome 26, Firefox 16+, IE 10+, Opera */
 }
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer-info p {
   margin: 0;
 }
