@@ -1,10 +1,8 @@
 $(document).ready(function(){
   
   var sellers = [
-    { name: "Rachel Chasteen", artistUrl: "http://www.rachelchasteen.com/", photo: "rachelc.png"},
     { name: "Deniz Ozaslan Sikora", artistUrl: "http://www.dkdknit.com", photo: "denizs.png"},
     { name: "Barbara Tomkins", artistUrl: "https://www.etsy.com/shop/ForagedDecor", photo: "barbarat.png"},
-    { name: "Sara Morris", artistUrl: "http://www.notedcandles.com/", photo: "saram.png"},
     { name: "Jennifer Carland (Carland Cartography)", artistUrl: "http://www.carlandcartography.com/", photo: "jenniferc.png"},
     { name: "Shariann Lewitt", artistUrl: "", photo: "shariannl.png"},
     { name: "Elnara Eynullayeva", artistUrl: "http://www.dilauranaturals.com", photo: "elnarae.png"},
