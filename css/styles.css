@@ -235,6 +235,9 @@ footer {
 .response {
   margin: 15px;
 }
+.hours-list {
+  margin-top: 15px;
+}
 
 @media (max-width: 600px) {
   .logo {
