@@ -57,23 +57,29 @@
     </div>
   </div>
   <section class="about animated fadeOut container" id="about">
-    <h2>About SLAM</h2>
     <div class="row">
       <div class="one-third column">
-        <p>The Somerville Local Arts Mall is a pop-up market featuring the work of 23 local artists. Our goal is to create a space in vibrant Union Square to connect our fantastic population of creators with our fabulous population of creative consumers. The market will run for one month from mid-November to Mid-December, just in time for the holidays!</p>
+        <h2>About SLAM</h2>
+        <p>The Somerville Local Arts Mall is a pop-up market featuring the work of 23 local artists. We have created a space in vibrant Union Square to connect our fantastic population of creators with our fabulous population of creative consumers. The market will run for one month from mid-November to Mid-December, just in time for the holidays!</p>
       </div>
 
-      <div class="two-thirds column">
-        <ul>
-          <li>SLAM will be open 7 days a week November 20<sup>th</sup> through December 17<sup>th</sup></li>
-          <li>Each artist will be renting their own room ranging in size and price to set up shop</li>
-          <li>All purchases will be made through a centralized point-of-sale using Square. We will share staffing responsibilities, so each artist staffs 4 days for a month of 7-days-a-week shopping exposure!</li>
-          <li>Deadline for applying is <strong>November 4<sup>th</sup></strong>!</li>
-        </ul>
-      
-        <div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfX2Jz1uUOnZR-yuS6YXyDnQF9N67bu0ntyeaa2Y9AxawKGbw/viewform" class="button button-primary">Apply Now</a>
+      <div class="one-third column">
+        <h2>About the Artists</h2>
+        <p>Our artists, creators, and makers have everything from knit and fiber artists to glass artists to painters, sculpters, printmakers, photographers, cosmetics, and more. You'll find everything you need for all of your holiday shopping (or just buy something nice for yourself). Support handmade this season and come check out SLAM.</p>
+      </div>
+
+      <div class="one-third column">
+        <h2>Hours and Location</h2>
+        <div class="footer-info">
+          <p>337 Somerville Ave.</p>
+          <p>Somerville, MA 02143</p>
         </div>
+        <ul class="hours-list">
+          <li>November 20th - December 17th, except November 24th (Thanksgiving)</li>
+          <li>Monday - Thursday: Noon - 6:30pm</li>
+          <li>Friday: Noon - 8:00pm</li>
+          <li>Saturday &amp; Sunday: 10:00am - 8:00pm</li>
+        </ul>
       </div>
     </div>
 
@@ -84,42 +90,7 @@
       <section class="artists-section animated fadeOut" title="section">
         <h2>Meet the artists</h2>
         
-        <ul class="artists-list">
-          <li class="artist">
-              <div class="overlay"><span>Printmaker</span></div>
-              <div class="artist-placeholder placeholder1"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Jeweler</span></div>
-              <div class="artist-placeholder placeholder2"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Painter</span></div>
-              <div class="artist-placeholder placeholder3"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Sculptor</span></div>
-              <div class="artist-placeholder placeholder4"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Zoro!</span></div>
-              <div class="artist-placeholder placeholder5"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Fiber artist</span></div>
-              <div class="artist-placeholder placeholder6"></div>
-          </li>
-          <li class="artist">
-              <div class="overlay"><span>Doctor Who?</span></div>
-              <div class="artist-placeholder placeholder7"></div>
-          </li>
-          <li class="artist">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfX2Jz1uUOnZR-yuS6YXyDnQF9N67bu0ntyeaa2Y9AxawKGbw/viewform">
-                <div class="overlay always-on-overlay "><span>YOU!</span></div>
-                <div class="artist-placeholder placeholder8"></div>
-              </a>
-          </li>
-        </ul>
+        <ul class="artists-list"></ul>
       </section>
     </div>
   </div>
@@ -142,6 +113,13 @@
           <p>337 Somerville Ave.</p>
           <p>Somerville, MA 02143</p>
           <p><a href="mailto:team@somervillearts.org">team@somervillearts.org</a></p>
+        <ul class="hours-list">
+          <li>November 20th - December 17th</li>
+          <li>Monday - Thursday: Noon - 6:30pm</li>
+          <li>Friday: Noon - 8:00pm</li>
+          <li>Saturday &amp; Sunday: 10:00am - 8:00pm</li>
+          <li>Thanksgiving closed</li>
+        </ul>
         </div>
         <div class="two-thirds column">
           <h2>Get notified</h2>
@@ -172,11 +150,24 @@
     </section>
   </footer>
 
+<script id="artist-template" type="text/x-handlebars-template">
+  <li class="artist">
+    {{#if artistUrl}}
+    <a href="{{artistUrl}}" target="_blank">
+    {{/if}}
+      <div class="overlay"><span>{{name}}</span></div>
+      <div class="artist-placeholder" style="background-image: url('images/artists/{{photo}}');"></div>
+    {{#if artistUrl}}
+    </a>
+    {{/if}}
+  </li>
+</script>
 
 <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
