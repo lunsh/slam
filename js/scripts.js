@@ -31,8 +31,8 @@ $(document).ready(function(){
     { name: "Winter Hill Jewelry", artistUrl: "https://www.etsy.com/shop/WinterHillJewelry", photo: "christ.png" },
     { name: "Suzanne Ahrens", artistUrl: "http://verdecosi.com/", photo: "suzannea.png" },
     { name: "Saphron", artistUrl: "https://www.behance.net/faetea", photo: "allisons.png" },
-    { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.png" },
-    { name: "Steve Pomeroy", artistUrl: "http://staticfree.info/", photo: "stevep.png" }
+    { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.png" }
+    //{ name: "Steve Pomeroy", artistUrl: "http://staticfree.info/", photo: "stevep.png" }
     //{ name: "Liz Pixel", artistUrl: "", photo: "lizp.png" } /************************* NO PHOTO OR WEBSITE **************/
   ];
   
