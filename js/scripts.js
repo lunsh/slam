@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   var sellers = [
     { name: "Deniz Ozaslan Sikora", artistUrl: "http://www.dkdknit.com", photo: "denizs.png"},
     { name: "Barbara Tomkins", artistUrl: "https://www.etsy.com/shop/ForagedDecor", photo: "barbarat.png"},
@@ -24,14 +24,14 @@ $(document).ready(function(){
     { name: "yeiou {paper objects}", artistUrl: "http://www.yeiou.com/", photo: "abigailm.png" },
     { name: "Sarah Morrison", artistUrl: "http://tashari.org/", photo: "sarahm.png" },
     { name: "Hacker Creations", artistUrl: "http://www.melissasglick.com/", photo: "melissag.png" },
-    { name: "Barbara Marder", artistUrl: "http://barbaramarder.com", photo: "barbaram.png" },
+    { name: "Barbara Marder", artistUrl: "http://barbaramarder.com", photo: "barbaram.jpg" },
     { name: "Seeds of Joie", artistUrl: "https://www.etsy.com/people/SeedsOfJoie", photo: "chiey.png" },
     { name: "Winter Hill Jewelry", artistUrl: "https://www.etsy.com/shop/WinterHillJewelry", photo: "christ.png" },
     { name: "Suzanne Ahrens", artistUrl: "http://verdecosi.com/", photo: "suzannea.png" },
     { name: "Saphron", artistUrl: "https://www.behance.net/faetea", photo: "allisons.png" },
-    { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.png" }
+    { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.png" },
     //{ name: "Steve Pomeroy", artistUrl: "http://staticfree.info/", photo: "stevep.png" }
-    //{ name: "Liz Pixel", artistUrl: "", photo: "lizp.png" } /************************* NO PHOTO OR WEBSITE **************/
+    { name: "Liz Pixel", artistUrl: "http://www.lizpixel.com/", photo: "lizp.jpg" }
   ];
   
   $('.about-info').find('h1').addClass('fadeInDown');
