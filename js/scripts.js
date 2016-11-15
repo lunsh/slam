@@ -31,7 +31,11 @@ $(document).ready(function(){
     { name: "Saphron", artistUrl: "https://www.behance.net/faetea", photo: "allisons.jpg" },
     { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.jpg" },
     //{ name: "Steve Pomeroy", artistUrl: "http://staticfree.info/", photo: "stevep.jpg" }
-    { name: "Liz Pixel", artistUrl: "http://www.lizpixel.com/", photo: "lizp.jpg" }
+    { name: "Liz Pixel", artistUrl: "http://www.lizpixel.com/", photo: "lizp.jpg" },
+    { name: "Jaclyn Meyer", artistUrl: "https://www.artfinder.com/jaclyn-meyer", photo: "jaclynm.jpg"},
+    { name: "Kari Percival", artistUrl: "http://www.karipercival.com/", photo: "karip.jpg"},
+    { name: "Jodie Dow", artistUrl: "", photo: ""},
+    { name: "Sherry Lyons", artistUrl: "", photo: ""}
   ];
   
   $('.about-info').find('h1').addClass('fadeInDown');
