@@ -27,7 +27,7 @@ $(document).ready(function(){
     { name: "Barbara Marder", artistUrl: "http://barbaramarder.com", photo: "barbaram.jpg" },
     { name: "Seeds of Joie", artistUrl: "https://www.etsy.com/people/SeedsOfJoie", photo: "chiey.jpg" },
     { name: "Winter Hill Jewelry", artistUrl: "https://www.etsy.com/shop/WinterHillJewelry", photo: "christ.jpg" },
-    { name: "Saphron", artistUrl: "https://www.behance.net/faetea", photo: "allisons.jpg" },
+    { name: "Saphron", artistUrl: "https://www.etsy.com/shop/faetea", photo: "allisons.jpg" },
     { name: "Miles Donovan", artistUrl: "https://www.etsy.com/shop/TheDailyRobot", photo: "milesd.jpg" },
     //{ name: "Steve Pomeroy", artistUrl: "http://staticfree.info/", photo: "stevep.jpg" }
     { name: "Liz Pixel", artistUrl: "http://www.lizpixel.com/", photo: "lizp.jpg" },
